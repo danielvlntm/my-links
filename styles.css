@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  --bgWhite: #ffffff;
+  --bgBlack: #000000;
+  --bgGreyLight: #c7c7c7;
+  --bgGrey: #797979;
+  --bgGreyDark: #161616;
+  --bgGreenLight: #37FFBF;
+  --bgGreen: #0df3a0;
+
+  --bdWhite: #ffffff;
+  --bdBlack: #000000;
+  --bdGreyLight: #c7c7c7;
+  --bdGrey: #797979;
+  --bdGreyDark: #161616;
+  --bdGreen: #0df3a0;
+
+  --txtWhite: #ffffff;
+  --txtDark: #000000;
+  --txtGreyDark: #161616;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+small,
+em,
+p {
+  color: var(--txtWhite);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Saira', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: var(--bgGreyDark);
+}
+
+body p {
+  font: normal 400 1.6rem/2.5rem 'Saira', sans-serif;
+}
+
+header .fa-circle-half-stroke {
+  color: white;
+  padding: 8px;
+}
+
+header .fa-circle-half-stroke:hover {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  height: 80%;
+  width: 65%;
+}
+
+main h1 {
+  font: normal 600 3.2rem/2.5rem 'Saira', sans-serif;
+}
+
+main h2 {
+  font: normal 400 2rem/2.5rem 'Saira', sans-serif;
+}
+
+main img {
+  width: 104px;
+  border-radius: 50%;
+  border: 4px solid var(--bdGreen);
+}
+
+main ul {
+  list-style: none;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main ul li {
+  font: normal 400 1.8rem/2.5rem 'Saira', sans-serif;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: var(--bgGreen);
+}
+
+main ul li:hover {
+  background-color: var(--bgGreenLight);
+  cursor: pointer;
+}
+
+main ul li a {
+  color: var(--txtGreyDark);
+}
+
+main ul li .icon-box {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+footer .fa-heart {
+  margin: 0 4px;
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    gap: 24px;
+  }
+
+  main ul {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  main ul {
+    max-width: 35%;
+  }
+}
